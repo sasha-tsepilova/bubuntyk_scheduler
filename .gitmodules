@@ -1,3 +1,7 @@
 [submodule "DS3"]
 	path = DS3
 	url = https://github.com/segemena/DS3
+
+[submodule "SoCRATES"]
+	path = SoCRATES
+	url = https://github.com/EpiSci/SoCRATES
