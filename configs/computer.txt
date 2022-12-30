@@ -1,0 +1,35 @@
+# CPU: 4 core freq 4200 MHz
+add_new_resource CPU CPU0 0 4 10 performance
+opp 4200 900
+task_1 1400 14
+task_2 1300 13
+task_3 1100 11
+task_4 1300 13
+task_5 1200 12
+task_6 1300 13
+task_7 700 7
+task_8 500 5
+task_9 1800 18
+task_10 2100 21
+
+# GPU: freq 1354 MHz
+add_new_resource ACC GPU 1 1 10 performance
+opp 1354 2000
+task_1 1400 14
+task_2 130 13
+task_3 1100 11
+task_4 130 13
+task_5 1200 12
+task_6 130 13
+task_7 700 7
+task_8 50 5
+task_9 1800 18
+task_10 210 21
+
+add_new_resource MEM M1 3 1 1 none
+None 0 0
+
+comm_band 0 0 1
+comm_band 1 1 1
+comm_band 0 1 100
+

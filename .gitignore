@@ -1,1 +1,5 @@
 .idea
+.vscode
+.clion
+.DS_Store
+__pycache__
