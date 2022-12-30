@@ -1,0 +1,48 @@
+# CPU1: 1 core freq 480 MHz
+add_new_resource CPU CPU0 0 1 10 performance
+opp 480 900
+task_1 14 14
+task_2 13 13
+task_3 11 11
+task_4 13 13
+task_5 12 12
+task_6 13 13
+task_7 7 7
+task_8 5 5
+task_9 18 18
+task_10 21 21
+
+# CPU2: 1 core freq 240 MHz
+add_new_resource CPU CPU1 1 1 10 performance
+opp 240 350
+task_1 28 14
+task_2 26 13
+task_3 22 11
+task_4 26 13
+task_5 24 12
+task_6 26 13
+task_7 14 7
+task_8 10 5
+task_9 20 18
+task_10 42 21
+
+# FPGA: freq 60 MHz
+add_new_resource ACC FPGA 2 1 10 performance
+opp 60 2000
+task_1 56 14
+task_2 2.6 13
+task_3 44 11
+task_4 2.6 13
+task_5 48 12
+task_6 2.6 13
+task_7 28 7
+task_8 1.0 5
+task_9 36 18
+task_10 4.2 21
+
+comm_band 0 0 1000
+comm_band 1 1 1000
+comm_band 2 2 1000
+comm_band 0 1 10
+comm_band 0 2 1
+comm_band 1 2 1
